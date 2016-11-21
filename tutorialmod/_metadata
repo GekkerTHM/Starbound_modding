@@ -1,0 +1,7 @@
+{
+	"friendlyname" : "tutorialmod", 
+	"name" : "Tutorial Mod",
+	"author" : "Gekker",
+	"description" : "Testing modding",
+	"version" : "0.1"
+}

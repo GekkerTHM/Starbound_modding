@@ -1,0 +1,92 @@
+{
+  "itemName" : "gbe",
+  "level" : 6,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A weapon of mass destruction from Toha Heavy Industries",
+  "shortdescription" : "Gravitational Beam Emitter",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+
+  "inventoryIcon" : "gbe.png",
+
+  "animation" : "gbe.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "emitter.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/aegisaltpistol_start.ogg" ]
+    }
+  },
+
+  "baseOffset" : [2.3, 0.60],
+  "muzzleOffset" : [3, -0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 100.0,
+    "energyUsage" : 10,
+    "inaccuracy" : 0.000,
+    "fireType" : "auto",
+
+    "projectileType" : "gravitonbeam",
+    "projectileCount" : 1,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+	
+        "animationStates" : {
+          "middle" : "active"
+        }
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 15,
+        "weaponRotation" : 15,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+		
+		"animationStates" : {
+          "middle" : "fire"
+        }
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 15,
+        "weaponRotation" : 15,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+		"animationStates" : {
+          "middle" : "fire"
+        }
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

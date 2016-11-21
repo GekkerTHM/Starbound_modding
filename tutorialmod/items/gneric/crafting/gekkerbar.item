@@ -1,0 +1,10 @@
+{
+  "itemName" : "gekkerbar",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "gekkerbar.png",
+  "description" : "Ore for Gekker bars is found at moist depths on most planets around Gekker friendly stars.",
+  "shortdescription" : "Gekker Bar",
+  "itemTags" : [ "reagent" ]
+}

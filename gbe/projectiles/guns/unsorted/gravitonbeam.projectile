@@ -1,0 +1,22 @@
+{
+  "projectileName" : "gravitonbeam",
+  "image" : "gravitonbeam.png",
+  "timeToLive" : 0.5,
+  "animationCycle" : 0.5,
+  "damageKindImage" : "icon.png",
+  "frameNumber" : 4,
+  "power" : 50,
+  "speed" : 0,
+  "lightColor" : [240, 240, 110],
+  "bounces" : 1,
+  "piercing" : true,
+  "damagePoly" : [ [0, 5], [0, -5], [200, -5], [200, 5] ],
+  "fullbright" : true,
+  "damageKind" : "electric",
+    "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bombexplosion/gbebombexplosion.config"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "kind" : "beam",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.01,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ "beam1" ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "beam1" ], [ "beam1" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ "beam1" ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

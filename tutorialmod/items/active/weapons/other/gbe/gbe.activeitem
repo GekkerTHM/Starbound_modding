@@ -1,0 +1,84 @@
+{
+  "itemName" : "gbe",
+  "level" : 6,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A weapon of mass destruction from Toha Heavy Industries",
+  "shortdescription" : "Gravitational Beam Emitter",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+
+  "inventoryIcon" : "gbe.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "gbe.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/aegisaltpistol_start.ogg" ]
+    }
+  },
+
+  "baseOffset" : [2.3, 0.60],
+  "muzzleOffset" : [3.0, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 100.0,
+    "energyUsage" : 10,
+    "inaccuracy" : 0.000,
+    "fireType" : "auto",
+
+    "projectileType" : "gravitonbeam",
+    "projectileParameters" : {
+      "knockback" : 40,
+      "speed" : 100
+    },
+    "projectileCount" : 1,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 25,
+        "weaponRotation" : 25,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 25,
+        "weaponRotation" : 25,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
